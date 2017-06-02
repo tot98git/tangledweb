@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Shop</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="styles/shopStyle.css">
+		<link rel="shortcut icon" type="image/png" href="gjw-images/favicon.png"/>
+
+		<link href="https://fonts.googleapis.com/css?family=Slabo+27px|Source+Sans+Pro|Crete+Round|Exo|Merriweather+Sans|Pacifico|Playfair+Display+SC|Quattrocento|Khula" rel="stylesheet">
+		<meta name="viewport"  content="width=device-width,initial-scale=1.0">
+		<script src="scripts/shopscript.js"></script>
+		<script src="scripts/jquery-3.1.1.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="top-header">
+				<img src="gjw-images/logoshadow.png" id="logo">
+				<div class="shop-info">
+					<span>My cart(0)</span>
+					<span>My account</span>					
+				</div>
+			</div>
+			<nav class="desktop-menu">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="playlist.html">Playlists</a></li>
+						<li><a href="shop.html">Shop</a></li>
+					</ul>
+			</nav>
+			<nav class="mobile-menu">
+				<h3>MENU</h3>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="index.html">Playlists</a></li>
+					<li><a href="shop.html">Shop</a></li>
+
+				</ul>
+			</nav>
+				<div class="shop-block">
+					<img src="gjw-images/merchblock.jpg">
+					<div class="shop-block-content">
+						<h3>Merch from your favorite artists</h3>
+						<h3>Affordable prices</h3>						
+					</div>
+				</div>
+				<div class="shop-block-tiles">
+					<img src="gjw-images/cds.jpg">
+					<div class="shop-block-tiles-content">
+						<h3>Your favorite CD's</h3>
+						<h3>From your favorite singers</h3>						
+					</div>
+				</div>
+				<div class="shop-block-tiles">
+					<img src="gjw-images/musicplayers.JPG">
+						<div class="shop-block-tiles-content">
+						<h3>Music players from the gold era up to now</h3>
+						</div>					
+				</div>
+				<div class="shop-block-tiles">
+					<img src="gjw-images/bowietiles.jpg">
+					<div class="shop-block-tiles-content">
+						<h3>Bowie Plus Guests - The Legendary Broadcast Collaborations</h3>
+					</div>
+				</div>
+				<div class="shop-block-tiles">
+					<img src="gjw-images/fleetwood.jpg">
+					<div class="shop-block-tiles-content">
+						<h3>Legendary legacies</h3>
+					</div>
+				</div>
+		</header>
+		<div class="modal-container">
+		<div class="modal">
+					<button id="closemodal">X</button>
+					<img id="modal-img" src="">
+					<h1>Vintage Retro Vinyl Record Player Turntable With Legs</h1>
+					<h3 id="item-price">Item price <b>50% OFF</b></h3>
+					<label>Quantity:</label>
+					<input type="number" value="1" min="0"></input><br>
+					<span style="float:left;width:20%;">Color: </span>
+					<div class="color-picker">
+						<div class="color">
+						</div>
+						<div class="color" style="background-color:black;">
+						</div>
+						<div class="color" style="background-color:maroon;">
+						</div>
+						<div class="color" style="background-color:white;">
+						</div>						
+					</div>
+					<br>
+					<button>Add to cart</button>
+					<button>Buy now</button>
+					<br>
+					<span>Shipping:<b> Free Shipping to Albania via Standard Shipping</b></span><br>
+					<span>Return Policy: <b>No return necessary if product not as described, agree refund with seller </b></span>
+					<h3>Payment:</h3>
+					<img src="gjw-images/payment.png" id="payment-info">
+				</div>
+			</div>
+		<section>
+			<form>
+				<label>Sort by: </label>
+				<select name="type" id="select-type">
+					<option>All</option>				
+					<option value="Merch">Merchandise</option>
+					<option value="players">Music players</option>
+					<option value="cd"> CDs & Boxset</option>
+				</select>
+				<label>Price:</label>
+				<select name="price">
+					<option value="low">Lower-to-highest</option>
+					<option value="high">Highest-to-lower</option>
+				</select>
+				<label>Rating:</label>
+				<select name="rating">
+					<option value="low">Lower-to-highest</option>
+					<option value="high">Highest-to-lower</option>
+				</select>
+			</form>
+				<div id="merch">
+				<h1>Merch</h1>
+			<div class="shop-item">
+				<div class="shop-item-wrapper">
+					<span class="left-span">Discord T-shirt</span>
+					<span class="right-span"> <strong>25€</strong></span>
+					<img src="gjw-images/merch1.jpg">
+				</div>
+			</div>
+			<div class="shop-item">
+				<div class="shop-item-wrapper">
+					<span class="left-span">Radiohead T-shirt</span>
+					<span class="right-span"> <strong>20€</strong></span>
+					<img src="gjw-images/radioheadmerch2.jpg">
+				</div>
+			</div>
+			<div class="shop-item">
+				<div class="shop-item-wrapper">
+					<span class="left-span">Nirvana bracelet</span>
+					<span class="right-span"> <strong>8€</strong></span>
+					<img src="gjw-images/merchbracelet.jpg">
+				</div>
+			</div>
+			<div class="shop-item">
+				<div class="shop-item-wrapper">
+					<span class="left-span">Pvris bracelet</span>
+					<span class="right-span"> <strong>5€</strong></span>
+					<img src="gjw-images/merchbracelet2.jpg">
+				</div>
+			</div>
+			<div class="shop-item">
+				<div class="shop-item-wrapper">
+					<span class="left-span">All time get low bracelet</span>
+					<span class="right-span"> <strong>2€</strong></span>
+					<img src="gjw-images/merchbracelet 2.jpg">
+				</div>
+			</div>
+			<div class="shop-item">
+				<div class="shop-item-wrapper">
+					<span class="left-span">Imagine dragons bracelet</span>
+					<span class="right-span"> <strong>10€</strong></span>
+					<img src="gjw-images/bracelet4.jpg">
+				</div>
+			</div>
+			<div id="music">
+			<h1>CD-s, vinyls and other music players </h1>
+			<div class="shop-item">
+				<div class="shop-item-wrapper">
+					<span class="left-span">Groov-e Retro Vinyl Record Player </span>
+					<span class="right-span"> <strong>53.99€</strong></span>
+					<img src="gjw-images/vinyl2.jpg">
+				</div>
+			</div>
+			<div class="shop-item">
+				<div class="shop-item-wrapper">
+					<span class="left-span">Zennox Red Retro Portable Briefcase </span>
+					<span class="right-span"> <strong>37.45€</strong></span>
+					<img src="gjw-images/vinyl3.jpg">
+				</div>
+			</div>
+			<div class="shop-item">
+				<div class="shop-item-wrapper">
+					<span class="left-span">Vintage Retro Vinyl Record Player Turntable With Legs</span>
+					<span class="right-span"> <strong>96.95€</strong></span>
+					<img src="gjw-images/vinyl4.jpg">
+				</div>
+			</div>
+			</div>
+
+			<div id="cdmusic">
+				<h1>CD's and boxset</h1>
+				<div class="shop-item">
+				<div class="shop-item-wrapper">
+					<span class="left-span">Bob Dylan - The Complete Album Collection Vol. One
+					</span>
+					<span class="right-span"> <strong>192.97€</strong></span>
+					<img src="gjw-images/bobdylanalbum.jpg">
+				</div>
+			</div>
+			<div class="shop-item">
+				<div class="shop-item-wrapper">
+					<span class="left-span">Boston
+					Fleetwood Mac</span>
+					<span class="right-span"> <strong>12.95€</strong></span>
+					<img src="gjw-images/boston.jpg">
+				</div>
+			</div>
+			<div class="shop-item">
+				<div class="shop-item-wrapper">
+					<span class="left-span">Live At Carnegie Hall - An Acoustic Evening  Box set</span>
+					<span class="right-span"> <strong>20.35€</strong></span>
+					<img src="gjw-images/carniegehall.jpg">
+				</div>
+			</div>
+			<div class="shop-item">
+				<div class="shop-item-wrapper">
+					<span class="left-span">Now That's What I Call Driving Rock Box set</span>
+					<span class="right-span"> <strong>11.99€</strong></span>
+					<img src="gjw-images/rockcd.jpeg">
+				</div>
+			</div>
+			<div class="shop-item">
+				<div class="shop-item-wrapper">
+					<span class="left-span">Bowie Plus Guests - The Legendary Broadcast Collaborations </span>
+					<span class="right-span"> <strong>49.99€</strong></span>
+					<img src="gjw-images/bowie.jpeg">
+				</div>
+			</div>
+			</div>
+		</section>
+				<aside style="position:relative;top:20px;">
+				<div class="ads">
+				<img src="gjw-images/clothes.jpg">
+				<h1>ADVERTISE HERE</h1>
+				</div>
+				<div class="most-read">
+				<h1>Most read articles</h1>
+					<ul>
+						<li><img src="gjw-images/elliotsmith.jpg">There's an Elliott Smith-Themed Bar in Los Angeles Now</li>
+						<li><img src="gjw-images/chriscornell.jpg">Chris Cornell's Death: Mental Health Experts Talk Depression, Suicide & Ativan</li>
+						<li><img src="gjw-images/paramore.jpg">Paramore Admit They Tried To “Rip Off” Tame Impala On Their New Album</li>
+						<li><img src="gjw-images/linkinpark.jpg">Linkin Park’s “One More Light” Reaches #1 On US iTunes Sales Chart</li>
+					</ul>
+				</div>
+				<div class="subscribe">
+				<h1>SUBSCRIBE TO NEWSLETTER</h1>
+				<input type="text"></input>
+				<button>Send</button>
+				</div>
+		</aside>
+		<footer>
+			<img src="gjw-images/logo.png">
+			<div class="social-icons">
+				<img src="gjw-images/fb.png">
+				<img src="gjw-images/twitter.png">
+				<img src="gjw-images/instagramm.png">
+				</div>
+
+				<p id="copyright">All right reserved to  <b>tangledweb</b>. The use of the materials in this page is entirely legal according to laws in California (212.12).</p>
+			
+		</footer>
+	</body>
+</html>
